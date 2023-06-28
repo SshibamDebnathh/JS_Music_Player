@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0 ;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-solid{
+    color:#0c4463;
+}
+input:hover{
+    cursor: pointer;
+}
+.playlist{
+    margin-top: -17px;
+    padding: 8px 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    float: right;
+    margin-left: 23px;
+    margin-right: -101px;
+    cursor: pointer;
+}
+.player{
+    background-color: rgb(217, 232, 104);
+    display: flex;
+    margin-top: 33px;
+    padding: 27px 60px;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #0c4463;
+    border-radius: 3px;
+
+}
+
+
+#icon{
+    background: url("https://source.unsplash.com/Qrspubmx6kE/640x360") center center/cover no-repeat;
+    height: 150px;
+    width: 150px;
+    margin: 23px;
+    border: 1px solid rgb(103, 101, 101);
+    border-radius: 3px;
+}
+
+#btnGroup{
+    padding: 7px;
+    display:flex;
+    flex-direction: row;
+    
+}
+#mode{
+    position: absolute;
+    top:10px;
+    right: 23px;
+    padding: 3px;
+    width: 77px;
+}
+.btn{
+    background: none;
+    border: none;
+    padding:7px;   
+}
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+#next,#previous{
+    margin-top: 14px;
+}
+#playPause{
+   margin: 0px 19px;
+    
+    /* padding: 23px; */
+}
+#slider{
+    width:100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: center;
+    padding: 7px;
+}
+
+
+.songSlide,.volumeSlide{
+    
+    background-color: black;
+    opacity: 0.7;
+    height: 4px;
+    appearance: none;
+    border-radius: 3px;
+  
+}
+
+.currentTime,.totalTime{
+    padding:10px;
+}
+
+.volumeSlide{ 
+    width: 30%;
+    margin-left: 5px;
+    height: 3px;
+}
+.songSlide{
+    width: 70%;
+}
+
+#title span{
+    margin-right: 37px;
+}
+#title{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: x-large;
+}

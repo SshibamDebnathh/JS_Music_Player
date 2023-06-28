@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="mode"><i class="fa-solid fa-toggle-off fa-2x"></i>Light</div>
+    <div class="player">
+        <div id ='title'><span>Music player</span> 
+            <div class="playlist"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        
+        <div class="nowPlaying">Playing x of y song </div>
+        <div class="songDetails" style="text-align:center;">
+
+            <div id="icon"></div>
+            <div id="songName">Kesariya.MP3</div>
+            <div id="artistName">Artist : Arjit Singh,Pritam</div>
+            
+        </div>
+        <div id="slider">
+            <div id="currentTime">00:00</div>
+            <input type="range"  value="0" class="songSlide" min="1" max="100" onchange="slideTime()">
+            <div id="totalTime">00:00</div>
+
+        </div>
+         
+        <div id="slider">
+            <i class="fa-solid fa-volume-low"></i>
+            <input class="volumeSlide" type="range" min="1" max="100" value="0" onchange="setVolume()">
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <div id="btnGroup">
+
+           <div class='btn' id="previous" onclick="prevSong()"><i class="fa-solid fa-backward-step fa-2x"></i></div>
+           <div class='btn' id="playPause" ><i class="fa-solid fa-circle-play fa-4x"></i></div>
+           <div class='btn' id="next" onclick="nextSong()"><i class="fa-solid fa-forward-step fa-2x"></i></div>
+        </div>
+        
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
